@@ -64,7 +64,7 @@ int main(int argc, char** argv)
 
 	// probabilistic Hough transform
 	vector<Vec4i> lines;		//вектор для хранения линий
-	HoughLinesP(dst, lines, 1, CV_PI / 180, 80, 30, 10);
+	HoughLinesP(dst, lines, 1, CV_PI / 180, 80, 100, 10);
 
 	//Рисуем линии по точкам
 	for (size_t i = 0; i < lines.size(); i++)
